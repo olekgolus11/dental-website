@@ -1,7 +1,11 @@
-import "./App.scss";
+import TestComponent from "./components/TestComponent";
 
 function App() {
-    return <div>a</div>;
+    return (
+        <div>
+            <TestComponent></TestComponent>
+        </div>
+    );
 }
 
 export default App;
