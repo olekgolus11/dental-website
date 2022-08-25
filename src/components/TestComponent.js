@@ -1,5 +1,14 @@
 const TestComponent = () => {
-    return <p>siema</p>;
+    return (
+        <div>
+            <p>Witam</p>
+            <p>Witam</p>
+            <p>Witam</p>
+            <p>Witam</p>
+            <p>Witam</p>
+            <p>Witam</p>
+        </div>
+    );
 };
 
 export default TestComponent;

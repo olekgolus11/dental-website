@@ -1,9 +1,9 @@
-import TestComponent from "./components/TestComponent";
+import NavBar from "./components/NavBar/NavBar";
 
 function App() {
     return (
         <div>
-            <TestComponent></TestComponent>
+            <NavBar />
         </div>
     );
 }

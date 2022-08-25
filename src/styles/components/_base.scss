@@ -1,0 +1,116 @@
+// all global sizes and variables
+
+// screen sizes
+$screen-laptop: 1600px;
+$screen-tablet: 1000px;
+$screen-phone: 450px;
+
+// fonts
+html {
+    font-family: "Lato", sans-serif;
+    font-size: 62.5%;
+}
+
+:root {
+    --fs-1: 15rem;
+    --fs-2: 7rem;
+    --fs-3: 5rem;
+    --fs-4: 4rem;
+    --fs-5: 3rem;
+    --fs-6: 2.5rem;
+    --fs-p: 3rem;
+    --fs-span: 3rem;
+    --fs-btn: 1.6rem;
+}
+
+@media (max-width: $screen-laptop) {
+    :root {
+        --fs-1: 12rem;
+        --fs-2: 5rem;
+        --fs-3: 4rem;
+        --fs-4: 3rem;
+        --fs-5: 2rem;
+        --fs-6: 1.5rem;
+        --fs-p: 2rem;
+        --fs-span: 2rem;
+        --fs-btn: 1.3rem;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+p {
+    font-family: "Vollkorn", serif;
+}
+h1 {
+    font-size: var(--fs-1);
+}
+h2 {
+    font-size: var(--fs-2);
+}
+h3 {
+    font-size: var(--fs-3);
+}
+h4 {
+    font-size: var(--fs-4);
+}
+h5 {
+    font-size: var(--fs-5);
+}
+h6 {
+    font-size: var(--fs-6);
+}
+p {
+    font-size: var(--fs-p);
+}
+span {
+    font-size: var(--fs-span);
+}
+button {
+    font-size: var(--fs-btn);
+}
+
+// colors
+$color-main-hue: 34;
+$color-main-sat: 51%;
+
+$color-sec-hue: 156;
+$color-sec-sat: 32%;
+
+$color-neutral-hue: 0;
+$color-neutral-sat: 9%;
+
+$color-main15: hsl($color-main-hue, $color-main-sat, 15%);
+$color-main25: hsl($color-main-hue, $color-main-sat, 25%);
+$color-main35: hsl($color-main-hue, $color-main-sat, 35%);
+$color-main45: hsl($color-main-hue, $color-main-sat, 45%);
+$color-main55: hsl($color-main-hue, $color-main-sat, 55%);
+$color-main65: hsl($color-main-hue, $color-main-sat, 65%);
+$color-main75: hsl($color-main-hue, $color-main-sat, 75%);
+$color-main85: hsl($color-main-hue, $color-main-sat, 85%);
+$color-main95: hsl($color-main-hue, $color-main-sat, 95%);
+
+$color-sec15: hsl($color-sec-hue, $color-sec-sat, 15%);
+$color-sec25: hsl($color-sec-hue, $color-sec-sat, 25%);
+$color-sec35: hsl($color-sec-hue, $color-sec-sat, 35%);
+$color-sec45: hsl($color-sec-hue, $color-sec-sat, 45%);
+$color-sec55: hsl($color-sec-hue, $color-sec-sat, 55%);
+$color-sec65: hsl($color-sec-hue, $color-sec-sat, 65%);
+$color-sec75: hsl($color-sec-hue, $color-sec-sat, 75%);
+$color-sec85: hsl($color-sec-hue, $color-sec-sat, 85%);
+$color-sec95: hsl($color-sec-hue, $color-sec-sat, 95%);
+
+$color-neutral10: hsl($color-neutral-hue, $color-neutral-sat, 10%);
+$color-neutral20: hsl($color-neutral-hue, $color-neutral-sat, 20%);
+$color-neutral30: hsl($color-neutral-hue, $color-neutral-sat, 30%);
+$color-neutral40: hsl($color-neutral-hue, $color-neutral-sat, 40%);
+$color-neutral50: hsl($color-neutral-hue, $color-neutral-sat, 50%);
+$color-neutral60: hsl($color-neutral-hue, $color-neutral-sat, 60%);
+$color-neutral70: hsl($color-neutral-hue, $color-neutral-sat, 70%);
+$color-neutral80: hsl($color-neutral-hue, $color-neutral-sat, 80%);
+$color-neutral90: hsl($color-neutral-hue, $color-neutral-sat, 90%);

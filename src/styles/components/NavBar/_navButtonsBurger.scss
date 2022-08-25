@@ -1,0 +1,10 @@
+.buttons-container {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    align-items: center;
+    height: 60%;
+    img {
+        height: 40%;
+    }
+}
