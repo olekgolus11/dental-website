@@ -4,7 +4,7 @@ const NavBar = () => {
     return (
         <div className="navbar-container">
             <div className="items-container">
-                <img src="/images/stomalogo.jpg" />
+                <img className="stomalogo" src="/images/stomalogo.jpg" />
                 <NavButtonsBurger />
             </div>
         </div>
