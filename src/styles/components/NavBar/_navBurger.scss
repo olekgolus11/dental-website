@@ -8,7 +8,8 @@
 }
 @media (max-width: $screen-tablet) {
     .burger {
-        height: 40%;
+        cursor: pointer;
+        height: 60%;
         width: 50px;
         display: flex;
         flex-direction: column;

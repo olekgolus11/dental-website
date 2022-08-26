@@ -1,10 +1,14 @@
 import NavButton from "./NavButton";
-import Burger from "./Burger";
+import NavBurger from "./NavBurger";
 
-const NavButtonsBurger = () => {
+const NavButtonsBurger = (props) => {
+    const burgerClickHandler = () => {
+        props.onExpand();
+    };
+
     return (
         <div className="menu">
-            <Burger />
+            <NavBurger onBurgerClick={burgerClickHandler} />
             <div className="buttons-container">
                 <NavButton>STRONA GŁÓWNA</NavButton>
                 <NavButton>O NAS</NavButton>
