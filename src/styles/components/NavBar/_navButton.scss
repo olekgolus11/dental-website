@@ -1,27 +1,47 @@
 @import "../base";
-.button {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    padding: 5px;
-    margin: 0 15px;
-    font-size: var(--fs-btn);
-    font-family: "Vollkorn", serif;
-    color: white;
-    cursor: pointer;
 
-    &::after {
-        position: absolute;
-        top: calc(1rem + var(--fs-btn));
-        left: 0;
-        content: "";
-        background-color: $color-main55;
-        height: 2px;
-        width: 0;
-        transition: 0.3s;
+@media (min-width: ($screen-tablet + 1px)) {
+    .button {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        margin: 0 15px;
+        font-size: var(--fs-btn);
+        font-family: "Vollkorn", serif;
+        color: white;
+        cursor: pointer;
+
+        &::after {
+            position: absolute;
+            top: calc(1rem + var(--fs-btn));
+            left: 0;
+            content: "";
+            background-color: $color-main55;
+            height: 2px;
+            width: 0;
+            transition: 0.3s;
+        }
+        &:hover::after {
+            width: 100%;
+            transition: 0.3s;
+        }
+        &:active {
+            color: rgb(199, 199, 199);
+        }
     }
-    &:hover::after {
-        width: 100%;
-        transition: 0.3s;
+}
+
+@media (max-width: $screen-tablet) {
+    .button {
+        padding: 5px 0;
+        font-size: var(--fs-btn);
+        font-family: "Vollkorn", serif;
+        text-align: center;
+        color: white;
+        cursor: pointer;
+        &:active {
+            color: $color-main55;
+        }
     }
 }

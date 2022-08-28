@@ -1,21 +1,49 @@
-import NavButtonsBurger from "./NavButtonsBurger";
-import NavMobileButtons from "./NavMobileButtons";
 import { useState } from "react";
+import NavButton from "./NavButton";
+import NavBurger from "./NavBurger";
 
 const NavBar = () => {
-    const [isListExpanded, toggleExpandList] = useState(false);
+    const [isExpanded, toggleExpand] = useState(false);
+    const [buttonsClasslist, toggleButtonsClasslist] = useState(
+        "buttons-container buttons-container--disabled"
+    );
 
-    const expandHandler = () => {
-        isListExpanded ? toggleExpandList(false) : toggleExpandList(true);
+    const expandOn = () => {
+        toggleExpand(true);
+        toggleButtonsClasslist("buttons-container");
+    };
+    const expandOff = () => {
+        toggleExpand(false);
+        toggleButtonsClasslist("buttons-container buttons-container--disabled");
+    };
+
+    const expandhandler = () => {
+        isExpanded ? expandOff() : expandOn();
     };
 
     return (
-        <div className="navbar-container">
-            <div className="items-container">
-                <img className="stomalogo" src="/images/stomalogo.jpg" />
-                <NavButtonsBurger onExpand={expandHandler} />
+        <div className="navbar">
+            <div className="navbar-container">
+                <div className="logo-and-burger-container">
+                    <img className="dental-logo" src="/images/stomalogo.jpg" />
+                    <NavBurger
+                        onExpand={expandhandler}
+                        isExpanded={isExpanded}
+                    />
+                </div>
+                <div className={buttonsClasslist}>
+                    <NavButton>STRONA GŁÓWNA</NavButton>
+                    <NavButton>O NAS</NavButton>
+                    <NavButton>ZAKRES USŁUG</NavButton>
+                    <NavButton>KONTAKT</NavButton>
+                    <NavButton>
+                        <img
+                            className="facebook-logo"
+                            src="/images/facebook.png"
+                        />
+                    </NavButton>
+                </div>
             </div>
-            <NavMobileButtons isExpanded={isListExpanded} />
         </div>
     );
 };
