@@ -1,0 +1,40 @@
+@import "../base";
+
+.burger {
+    display: none;
+}
+
+@media (max-width: $screen-tablet) {
+    .burger {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        width: 60px;
+        height: 60%;
+        cursor: pointer;
+
+        .s1,
+        .s2,
+        .s3 {
+            margin: auto;
+            display: inline-block;
+            width: 80%;
+            height: 6%;
+            background-color: white;
+            transition: 0.2s;
+            transform-origin: 100%;
+        }
+
+        .s1--active {
+            transform: rotate(-33deg);
+        }
+        .s2--active {
+            opacity: 0;
+        }
+        .s3--active {
+            transform: rotate(33deg);
+        }
+    }
+}
