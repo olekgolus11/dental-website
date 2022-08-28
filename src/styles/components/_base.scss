@@ -7,7 +7,7 @@ $screen-phone: 450px;
 
 // fonts
 html {
-    font-family: "Lato", sans-serif;
+    font-family: "Source Serif 4", serif;
     font-size: 62.5%;
 }
 
@@ -44,9 +44,6 @@ h4,
 h5,
 h6,
 button,
-p {
-    font-family: "Vollkorn", serif;
-}
 h1 {
     font-size: var(--fs-1);
 }
@@ -94,6 +91,7 @@ $color-main65: hsl($color-main-hue, $color-main-sat, 65%);
 $color-main75: hsl($color-main-hue, $color-main-sat, 75%);
 $color-main85: hsl($color-main-hue, $color-main-sat, 85%);
 $color-main95: hsl($color-main-hue, $color-main-sat, 95%);
+$color-main95-bg: rgba(249, 243, 236, 0.5);
 
 $color-sec15: hsl($color-sec-hue, $color-sec-sat, 15%);
 $color-sec25: hsl($color-sec-hue, $color-sec-sat, 25%);

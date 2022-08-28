@@ -8,8 +8,7 @@
         padding: 5px;
         margin: 0 15px;
         font-size: var(--fs-btn);
-        font-family: "Vollkorn", serif;
-        color: white;
+        color: black;
         cursor: pointer;
 
         &::after {
@@ -36,9 +35,8 @@
     .button {
         padding: 5px 0;
         font-size: var(--fs-btn);
-        font-family: "Vollkorn", serif;
         text-align: center;
-        color: white;
+        color: black;
         cursor: pointer;
         &:active {
             color: $color-main55;

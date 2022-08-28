@@ -25,7 +25,10 @@ const NavBar = () => {
         <div className="navbar">
             <div className="navbar-container">
                 <div className="logo-and-burger-container">
-                    <img className="dental-logo" src="/images/stomalogo.jpg" />
+                    <img
+                        className="dental-logo"
+                        src="/images/logostomatologia.png"
+                    />
                     <NavBurger
                         onExpand={expandhandler}
                         isExpanded={isExpanded}
