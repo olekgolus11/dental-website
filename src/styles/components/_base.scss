@@ -1,77 +1,5 @@
 // all global sizes and variables
 
-// screen sizes
-$screen-laptop: 1600px;
-$screen-tablet: 1000px;
-$screen-phone: 450px;
-
-// fonts
-html {
-    font-family: "Source Serif 4", serif;
-    font-size: 62.5%;
-}
-
-:root {
-    --fs-1: 15rem;
-    --fs-2: 7rem;
-    --fs-3: 5rem;
-    --fs-4: 4rem;
-    --fs-5: 3rem;
-    --fs-6: 2.5rem;
-    --fs-p: 3rem;
-    --fs-span: 3rem;
-    --fs-btn: 1.6rem;
-}
-
-@media (max-width: $screen-laptop) {
-    :root {
-        --fs-1: 12rem;
-        --fs-2: 5rem;
-        --fs-3: 4rem;
-        --fs-4: 3rem;
-        --fs-5: 2rem;
-        --fs-6: 1.5rem;
-        --fs-p: 2rem;
-        --fs-span: 2rem;
-        --fs-btn: 1.3rem;
-    }
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-button,
-h1 {
-    font-size: var(--fs-1);
-}
-h2 {
-    font-size: var(--fs-2);
-}
-h3 {
-    font-size: var(--fs-3);
-}
-h4 {
-    font-size: var(--fs-4);
-}
-h5 {
-    font-size: var(--fs-5);
-}
-h6 {
-    font-size: var(--fs-6);
-}
-p {
-    font-size: var(--fs-p);
-}
-span {
-    font-size: var(--fs-span);
-}
-button {
-    font-size: var(--fs-btn);
-}
-
 // colors
 $color-main-hue: 34;
 $color-main-sat: 51%;
@@ -112,3 +40,95 @@ $color-neutral60: hsl($color-neutral-hue, $color-neutral-sat, 60%);
 $color-neutral70: hsl($color-neutral-hue, $color-neutral-sat, 70%);
 $color-neutral80: hsl($color-neutral-hue, $color-neutral-sat, 80%);
 $color-neutral90: hsl($color-neutral-hue, $color-neutral-sat, 90%);
+
+// screen sizes
+$screen-laptop: 1600px;
+$screen-tablet: 1000px;
+$screen-phone: 450px;
+
+// fonts
+html {
+    font-family: "Source Serif 4", serif;
+    font-size: 62.5%;
+    background-color: $color-main95;
+}
+
+:root {
+    --fs-1: 15rem;
+    --fs-2: 7rem;
+    --fs-3: 5rem;
+    --fs-4: 4rem;
+    --fs-5: 3rem;
+    --fs-6: 2.5rem;
+    --fs-p: 3rem;
+    --fs-span: 3rem;
+    --fs-btn: 1.6rem;
+    --fs-bigtext: 53rem;
+}
+
+@media (max-width: $screen-laptop) {
+    :root {
+        --fs-1: 12rem;
+        --fs-2: 5rem;
+        --fs-3: 4rem;
+        --fs-4: 3rem;
+        --fs-5: 2rem;
+        --fs-6: 1.5rem;
+        --fs-p: 2rem;
+        --fs-span: 2rem;
+        --fs-btn: 1.3rem;
+        --fs-bigtext: 37rem;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+h1 {
+    font-size: var(--fs-1);
+    font-weight: 400;
+}
+h2 {
+    font-size: var(--fs-2);
+}
+h3 {
+    font-size: var(--fs-3);
+}
+h4 {
+    font-size: var(--fs-4);
+}
+h5 {
+    font-size: var(--fs-5);
+}
+h6 {
+    font-size: var(--fs-6);
+}
+p {
+    font-size: var(--fs-p);
+}
+span {
+    font-size: var(--fs-span);
+}
+button {
+    font-size: var(--fs-btn);
+}
+.big-bg-text-container {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    z-index: -1;
+}
+.big-bg-text {
+    font-size: var(--fs-bigtext);
+    color: rgba(199, 147, 81, 0.05);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+}
