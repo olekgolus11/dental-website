@@ -4,10 +4,69 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    flex: 1;
+    align-items: flex-start;
     position: absolute;
     top: 20vh;
     left: 0;
     width: 100%;
-    height: 100vh;
+    .text-content {
+        display: grid;
+        gap: 0;
+        grid-template-columns: 20% 2.5fr 20%;
+        width: 50%;
+
+        .text-usmiech {
+            margin: -60px 0;
+        }
+        .line {
+            align-self: center;
+            height: 2px;
+            width: 100%;
+            background-color: $color-main5;
+        }
+        .text-tomy {
+            margin: 0;
+            .text-my {
+                all: unset;
+                color: $color-main55;
+            }
+        }
+        p {
+            font-style: italic;
+        }
+        .button-poznajoferte {
+            cursor: pointer;
+            width: max-content;
+            padding: calc(var(--fs-6) / 2) var(--fs-6);
+            text-align: center;
+            background-color: $color-main5;
+            font-size: var(--fs-6);
+            color: white;
+            transition: 0.2s;
+            &:hover {
+                background-color: $color-main15;
+            }
+            &:active {
+                transition: 0s;
+                background-color: $color-main25;
+            }
+        }
+    }
+    .image-content {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        .photo-girl {
+            object-position: 0%;
+            object-fit: cover;
+            width: 80%;
+            height: 90vh;
+        }
+    }
+}
+
+@media (max-width: $screen-phone) {
+    .main-container {
+        flex-direction: column;
+    }
 }

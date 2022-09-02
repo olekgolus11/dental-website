@@ -10,6 +10,7 @@ $color-sec-sat: 32%;
 $color-neutral-hue: 0;
 $color-neutral-sat: 9%;
 
+$color-main5: hsl($color-main-hue, $color-main-sat, 5%);
 $color-main15: hsl($color-main-hue, $color-main-sat, 15%);
 $color-main25: hsl($color-main-hue, $color-main-sat, 25%);
 $color-main35: hsl($color-main-hue, $color-main-sat, 35%);
@@ -73,8 +74,22 @@ html {
         --fs-3: 4rem;
         --fs-4: 3rem;
         --fs-5: 2rem;
-        --fs-6: 1.5rem;
-        --fs-p: 2rem;
+        --fs-6: 2rem;
+        --fs-p: 2.5rem;
+        --fs-span: 2rem;
+        --fs-btn: 1.3rem;
+        --fs-bigtext: 37rem;
+    }
+}
+@media (max-width: $screen-phone) {
+    :root {
+        --fs-1: 8rem;
+        --fs-2: 5rem;
+        --fs-3: 4rem;
+        --fs-4: 3rem;
+        --fs-5: 2rem;
+        --fs-6: 2rem;
+        --fs-p: 2.5rem;
         --fs-span: 2rem;
         --fs-btn: 1.3rem;
         --fs-bigtext: 37rem;
@@ -91,6 +106,7 @@ button,
 h1 {
     font-size: var(--fs-1);
     font-weight: 400;
+    color: $color-main5;
 }
 h2 {
     font-size: var(--fs-2);
@@ -108,6 +124,7 @@ h6 {
     font-size: var(--fs-6);
 }
 p {
+    color: $color-main5;
     font-size: var(--fs-p);
 }
 span {
