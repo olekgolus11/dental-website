@@ -44,8 +44,8 @@ $color-neutral90: hsl($color-neutral-hue, $color-neutral-sat, 90%);
 
 // screen sizes
 $screen-laptop: 1600px;
-$screen-tablet: 1000px;
-$screen-phone: 450px;
+$screen-tablet: 900px;
+$screen-phone: 500px;
 
 // fonts
 html {
@@ -81,18 +81,33 @@ html {
         --fs-bigtext: 37rem;
     }
 }
-@media (max-width: $screen-phone) {
+@media (max-width: $screen-tablet) {
     :root {
-        --fs-1: 8rem;
+        --fs-1: 10rem;
         --fs-2: 5rem;
         --fs-3: 4rem;
         --fs-4: 3rem;
         --fs-5: 2rem;
         --fs-6: 2rem;
-        --fs-p: 2.5rem;
-        --fs-span: 2rem;
-        --fs-btn: 1.3rem;
-        --fs-bigtext: 37rem;
+        --fs-p: 2.2rem;
+        --fs-span: 1.8rem;
+        --fs-btn: 4rem;
+        --fs-bigtext: 25rem;
+    }
+}
+
+@media (max-width: $screen-phone) {
+    :root {
+        --fs-1: 7rem;
+        --fs-2: 4.5rem;
+        --fs-3: 3.7rem;
+        --fs-4: 2.7rem;
+        --fs-5: 1.8rem;
+        --fs-6: 1.8rem;
+        --fs-p: 2rem;
+        --fs-span: 1.8rem;
+        --fs-btn: 3rem;
+        --fs-bigtext: 13rem;
     }
 }
 
