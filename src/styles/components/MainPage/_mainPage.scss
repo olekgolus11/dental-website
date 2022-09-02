@@ -57,8 +57,8 @@
         justify-content: center;
         width: 50%;
         .photo-girl {
-            object-position: 0%;
             object-fit: cover;
+            object-position: top;
             width: 80%;
             height: 90vh;
         }
