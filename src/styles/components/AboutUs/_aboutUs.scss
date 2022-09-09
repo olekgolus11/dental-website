@@ -1,5 +1,15 @@
+@import "../base";
+
 .aboutus-container {
+    margin: 0 15%;
+
     .title {
         text-align: center;
+    }
+    .cards-container-grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 100px;
+        row-gap: 40px;
     }
 }
