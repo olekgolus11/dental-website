@@ -1,5 +1,9 @@
 @import "../base";
 
+.main-aboutus-container {
+    position: relative;
+}
+
 .aboutus-container {
     margin: 0 15%;
 
@@ -11,5 +15,24 @@
         grid-template-columns: auto auto;
         column-gap: 100px;
         row-gap: 40px;
+
+        .arrow {
+            justify-self: end;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+    }
+}
+
+@media (max-width: $screen-tablet) {
+    .aboutus-container {
+        margin: 0;
+        .cards-container-grid {
+            grid-template-columns: auto;
+            .arrow {
+                display: none;
+            }
+        }
     }
 }

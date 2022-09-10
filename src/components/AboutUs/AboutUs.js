@@ -23,17 +23,21 @@ const AboutUs = () => {
     ];
 
     return (
-        <div className="aboutus-container">
-            <h2 className="title">POZNAJ NAS</h2>
-            <div className="cards-container-grid">
-                {descriptionsData.map((person) => (
-                    <Card
-                        key={person.name}
-                        picture={person.picture}
-                        name={person.name}
-                        description={person.description}
-                    />
-                ))}
+        <div className="main-aboutus-container">
+            <div className="aboutus-container">
+                <h2 className="title">POZNAJ NAS</h2>
+                <div className="cards-container-grid">
+                    {descriptionsData.map((person) => (
+                        <Card
+                            key={person.name}
+                            picture={person.picture}
+                            name={person.name}
+                            description={person.description}
+                        />
+                    ))}
+                    <img className="arrow" src="/images/arrow.png" />
+                </div>
+                <span className="big-bg-text">POZNAJ NAS</span>
             </div>
         </div>
     );

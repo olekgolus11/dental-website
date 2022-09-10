@@ -66,9 +66,9 @@
     .main-container {
         flex-direction: column;
         .image-content {
-            position: relative;
             margin-top: 10%;
-            right: -20vw;
+            width: 100%;
+            justify-content: end;
             .photo-girl {
                 width: 80vw;
                 min-height: 40vw;

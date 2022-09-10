@@ -4,7 +4,7 @@ import AboutUs from "./components/AboutUs/AboutUs";
 
 function App() {
     return (
-        <div>
+        <div className="app-container">
             <NavBar />
             <MainPage />
             <AboutUs />

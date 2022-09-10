@@ -23,6 +23,7 @@ const MainPage = () => {
             <div className="image-content">
                 <img className="photo-girl" src="/images/girl-photo.jpg" />
             </div>
+            <span className="big-bg-text">SZYMION STOMATOLOGIA</span>
         </div>
     );
 };

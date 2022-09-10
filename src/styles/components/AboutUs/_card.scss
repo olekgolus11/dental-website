@@ -1,6 +1,8 @@
+@import "../base";
+
 .card-container {
     display: grid;
-    grid-template-rows: 500px auto;
+    grid-template-rows: 500px auto auto;
     img {
         height: 100%;
         max-width: 80%;
@@ -12,5 +14,15 @@
     }
     h6 {
         margin: 0;
+    }
+}
+@media (max-width: $screen-tablet) {
+    .card-container {
+        h3 {
+            margin: 30px 15% 0 15%;
+        }
+        h6 {
+            margin: 0 15%;
+        }
     }
 }
