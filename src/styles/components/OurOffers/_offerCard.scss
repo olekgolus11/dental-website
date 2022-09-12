@@ -1,0 +1,13 @@
+.offer-container-grid {
+    display: grid;
+    width: 90%;
+    grid-template-columns: 2.5fr 1fr;
+    column-gap: 20px;
+    #offer-title {
+        margin: 0;
+        grid-column: span 2;
+    }
+    #offer-description {
+        margin: 0;
+    }
+}

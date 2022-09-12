@@ -1,0 +1,28 @@
+@import "../base";
+
+.ouroffers-container {
+    .title {
+        text-align: center;
+        margin: 40px 0;
+    }
+    .offers-container-grid {
+        margin-left: 15%;
+        display: grid;
+        grid-auto-rows: auto;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 200px;
+        row-gap: 40px;
+        .description {
+            margin: 0;
+        }
+        .tools-image {
+            object-fit: cover;
+            object-position: left;
+            height: 80%;
+            width: 100%;
+            background-color: blue;
+            grid-row: span 7;
+            align-self: center;
+        }
+    }
+}

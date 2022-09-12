@@ -1,6 +1,7 @@
 import NavBar from "./components/NavBar/NavBar";
 import MainPage from "./components/MainPage/MainPage";
 import AboutUs from "./components/AboutUs/AboutUs";
+import OurOffers from "./components/OurOffers/OurOffers";
 
 function App() {
     return (
@@ -8,6 +9,7 @@ function App() {
             <NavBar />
             <MainPage />
             <AboutUs />
+            <OurOffers />
         </div>
     );
 }
