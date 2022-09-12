@@ -1,15 +1,10 @@
 @import "../base";
 
-.big-bg-text-container {
-    top: 20vh;
-}
-
 .main-container {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    position: absolute;
-    top: 20vh;
+    margin-top: 20vh;
     left: 0;
     width: 100%;
     .text-content {
@@ -71,9 +66,9 @@
     .main-container {
         flex-direction: column;
         .image-content {
-            position: relative;
             margin-top: 10%;
-            right: -20vw;
+            width: 100%;
+            justify-content: end;
             .photo-girl {
                 width: 80vw;
                 min-height: 40vw;

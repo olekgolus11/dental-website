@@ -56,11 +56,11 @@ html {
 
 :root {
     --fs-1: 15rem;
-    --fs-2: 7rem;
+    --fs-2: 12rem;
     --fs-3: 5rem;
     --fs-4: 4rem;
     --fs-5: 3rem;
-    --fs-6: 2.5rem;
+    --fs-6: 2rem;
     --fs-p: 3rem;
     --fs-span: 3rem;
     --fs-btn: 1.6rem;
@@ -75,7 +75,7 @@ html {
         --fs-4: 3rem;
         --fs-5: 2rem;
         --fs-6: 2rem;
-        --fs-p: 2.5rem;
+        --fs-p: 2rem;
         --fs-span: 2rem;
         --fs-btn: 1.3rem;
         --fs-bigtext: 37rem;
@@ -89,7 +89,7 @@ html {
         --fs-4: 3rem;
         --fs-5: 2rem;
         --fs-6: 2rem;
-        --fs-p: 2.2rem;
+        --fs-p: 1.8rem;
         --fs-span: 1.8rem;
         --fs-btn: 4rem;
         --fs-bigtext: 25rem;
@@ -104,7 +104,7 @@ html {
         --fs-4: 2.7rem;
         --fs-5: 1.8rem;
         --fs-6: 1.8rem;
-        --fs-p: 2rem;
+        --fs-p: 1.6rem;
         --fs-span: 1.8rem;
         --fs-btn: 3rem;
         --fs-bigtext: 13rem;
@@ -148,12 +148,14 @@ span {
 button {
     font-size: var(--fs-btn);
 }
-.big-bg-text-container {
-    position: relative;
-    width: 100%;
-    height: 80vh;
-    z-index: -1;
+
+// special classes
+
+.app-container {
+    position: absolute;
+    left: 0;
 }
+
 .big-bg-text {
     font-size: var(--fs-bigtext);
     color: rgba(199, 147, 81, 0.05);
@@ -162,5 +164,12 @@ button {
     left: 0;
     bottom: 0;
     right: 0;
+    z-index: -1;
+    white-space: nowrap;
     overflow: hidden;
+}
+@media (max-width: $screen-phone) {
+    .big-bg-text {
+        display: none;
+    }
 }
