@@ -16,7 +16,7 @@
 
 @media (max-width: $screen-tablet) {
     .offer-container-grid {
-        width: 100%;
+        width: auto;
         grid-template-columns: 1fr;
         #offer-title {
             grid-column: span 1;

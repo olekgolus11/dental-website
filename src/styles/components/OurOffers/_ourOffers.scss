@@ -30,12 +30,15 @@
     .ouroffers-container {
         .offers-container-grid {
             column-gap: 0;
-            margin-right: 15%;
+            margin: 0;
             grid-template-columns: 1fr;
 
             .tools-image {
                 grid-row: span 1;
                 height: 100%;
+            }
+            & > :not(.tools-image) {
+                margin: 0 15%;
             }
         }
     }
