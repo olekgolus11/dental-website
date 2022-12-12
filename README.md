@@ -1,3 +1,3 @@
-# Dental clinic website Project - Szymion Stomatologia
+# Dental clinic website Project
 
 This is my first ReactJS project
